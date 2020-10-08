@@ -38,7 +38,7 @@ export class CadastroComponent implements OnInit {
         this.alert.showAlertSuccess("Usuário cadastrado com sucesso !")
       })
     }else{
-      alert("Suas senhas não conferem")
+      this.alert.showAlertDanger("Suas senhas não conferem")
     }
   }
 
