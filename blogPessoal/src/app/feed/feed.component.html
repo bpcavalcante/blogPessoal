@@ -44,8 +44,8 @@
 
             <nav class="d-flex justify-content-center">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link actice text-secondary font-weight-bold" id="nav-home-tab"
-                        data-toggle="tab" href="#minhas-postagem" role="tab" aria-controls="nav-home"
+                    <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-home-tab"
+                        data-toggle="tab" href="#minhas-postagens" role="tab" aria-controls="nav-home"
                         aria-selected="false">Minhas Postagens</a>
 
                     <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-profile-tab" data-toggle="tab"
@@ -97,7 +97,7 @@
                                     <p class="card-text" aria-describedby="texto">{{item.texto}} </p>
                                     <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
                                         Postado em {{item.data | date:'dd/MM/yyyy'}} às
-                                        {{item.data | date: 'dd/MM/yyyy'}}
+                                        {{item.data | date: 'HH:mm'}}
                                     </small>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                 </div>
 
                 <!--Tema Filtro-->
-                <div class="tab-pane fade" id="postagens-temas" role="tabpanel" aria-labelledby="nav-presenca-tab">
+                <div class="tab-pane fade show" id="postagens-temas" role="tabpanel" aria-labelledby="nav-presenca-tab">
 
                     <div class="row mt-3 mb-3">
                         <div class="col-md-10 pr-0">
